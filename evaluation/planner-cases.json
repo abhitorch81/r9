@@ -1,0 +1,146 @@
+[
+  {
+    "id": "vortex-1",
+    "question": "Show a smooth rotating field and compare small and large circular loops.",
+    "field": "vortex",
+    "comparison": "radius"
+  },
+  {
+    "id": "vortex-2",
+    "question": "Help me see Stokes using rotation and a raised spanning surface.",
+    "field": "vortex",
+    "comparison": "surface"
+  },
+  {
+    "id": "vortex-3",
+    "question": "Use a smooth swirl and reverse the direction around its boundary.",
+    "field": "vortex",
+    "comparison": "orientation"
+  },
+  {
+    "id": "source-1",
+    "question": "Show outward expansion without rotation; vary the loop radius.",
+    "field": "source",
+    "comparison": "radius"
+  },
+  {
+    "id": "source-2",
+    "question": "Visualize a source with arrows pointing away from the origin.",
+    "field": "source",
+    "comparison": "none"
+  },
+  {
+    "id": "source-3",
+    "question": "Take the expanding source example and reverse boundary orientation.",
+    "field": "source",
+    "comparison": "orientation"
+  },
+  {
+    "id": "saddle-1",
+    "question": "I want equal stretching along x and compression along y.",
+    "field": "saddle",
+    "comparison": "none"
+  },
+  {
+    "id": "saddle-2",
+    "question": "Compare circle sizes in a field that stretches x and compresses y equally.",
+    "field": "saddle",
+    "comparison": "radius"
+  },
+  {
+    "id": "saddle-3",
+    "question": "For the equal stretch-compress saddle, lift the spanning surface.",
+    "field": "saddle",
+    "comparison": "surface"
+  },
+  {
+    "id": "gradient-1",
+    "question": "Show the supported steepest-ascent example from a potential.",
+    "field": "gradient",
+    "comparison": "none"
+  },
+  {
+    "id": "gradient-2",
+    "question": "In the gradient example, does reversing the loop change the work?",
+    "field": "gradient",
+    "comparison": "orientation"
+  },
+  {
+    "id": "gradient-3",
+    "question": "Compare different loop radii for the conservative gradient example.",
+    "field": "gradient",
+    "comparison": "radius"
+  },
+  {
+    "id": "singular-1",
+    "question": "Show zero curl with nonzero circulation around an excluded axis.",
+    "field": "singular",
+    "comparison": "none"
+  },
+  {
+    "id": "singular-2",
+    "question": "Change loop radius in the excluded-axis counterexample.",
+    "field": "singular",
+    "comparison": "radius"
+  },
+  {
+    "id": "singular-3",
+    "question": "Reverse the boundary direction in the zero-curl field with a hole.",
+    "field": "singular",
+    "comparison": "orientation"
+  },
+  {
+    "id": "outside_scope-1",
+    "question": "Solve the heat equation on a cube.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-2",
+    "question": "Prove Stokes theorem for every smooth surface.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-3",
+    "question": "Compute flux through an arbitrary torus I specify.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-4",
+    "question": "Animate a time-dependent Navier Stokes solution.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-5",
+    "question": "Solve the hydrogen atom quantum wave equation.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-6",
+    "question": "Find all critical points of my arbitrary scalar potential.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-7",
+    "question": "Calculate an indefinite integral of exp(-x^2).",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-8",
+    "question": "Tell me the weather tomorrow.",
+    "field": "outside_scope",
+    "comparison": "none"
+  },
+  {
+    "id": "outside_scope-9",
+    "question": "Change the surface.",
+    "field": "outside_scope",
+    "comparison": "none"
+  }
+]

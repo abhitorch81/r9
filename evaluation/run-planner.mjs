@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {plannerSchema,plannerPrompt,validatePlan} from '../dist/planner-core.mjs';
+const bytes=fs.readFileSync(new URL('./planner-cases.json',import.meta.url));const cases=JSON.parse(bytes);
+const model=process.env.FIELDTRIP_EVAL_MODEL||'gemma3:1b',endpoint=process.env.FIELDTRIP_EVAL_URL||'http://127.0.0.1:11434/api/generate';
+const provider=process.env.FIELDTRIP_EVAL_PROVIDER||'ollama';
+if(provider==='google'&&!process.env.GEMINI_API_KEY)throw Error('Set GEMINI_API_KEY locally. Do not share it in chat.');
+const results=[];const output=new URL('./planner-results-'+Date.now()+'.json',import.meta.url);
+for(const test of cases){const start=performance.now();let raw='',plan=null,error=null;
+ try{const url=provider==='google'?'https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(model)+':generateContent':endpoint;const payload=provider==='google'?{contents:[{parts:[{text:plannerPrompt(test.question)+'\nRequired JSON schema: '+JSON.stringify(plannerSchema)}]}],generationConfig:{temperature:0,maxOutputTokens:1024}}:{model,stream:false,format:plannerSchema,options:{temperature:0,num_predict:100},prompt:plannerPrompt(test.question)};const headers={'Content-Type':'application/json'};if(provider==='google')headers['x-goog-api-key']=process.env.GEMINI_API_KEY;const response=await fetch(url,{method:'POST',headers,body:JSON.stringify(payload),signal:AbortSignal.timeout(180000)});if(!response.ok)throw Error('HTTP '+response.status);const data=await response.json();raw=provider==='google'?(data.candidates?.[0]?.content?.parts||[]).filter(p=>!p.thought).map(p=>p.text||'').join(''):data.response;plan=validatePlan(JSON.parse(raw.trim().replace(/^```(?:json)?\s*/,'').replace(/\s*```$/,'')));}catch(e){error=e.message}
+ const fieldCorrect=plan?.field===test.field,comparisonCorrect=plan?.comparison===test.comparison;
+ results.push({id:test.id,question:test.question,expected:{field:test.field,comparison:test.comparison},plan,raw,error,fieldCorrect,comparisonCorrect,correct:fieldCorrect&&comparisonCorrect,seconds:(performance.now()-start)/1000});
+ fs.writeFileSync(output,JSON.stringify({model,provider,endpoint:provider==='google'?'https://generativelanguage.googleapis.com/v1beta':endpoint,outputConstraint:provider==='google'?'JSON schema included in prompt; no server-side schema constraint':'Ollama JSON schema',createdAt:new Date().toISOString(),datasetSha256:crypto.createHash('sha256').update(bytes).digest('hex'),promptSha256:crypto.createHash('sha256').update(plannerPrompt('')).digest('hex'),scope:'Bounded planner evaluation. Exact field and comparison IDs; not arbitrary formula translation or end-to-end app accuracy. Author-created frozen questions, not an independently held-out benchmark.',completed:results.length,total:cases.length,fieldCorrect:results.filter(r=>r.fieldCorrect).length,comparisonCorrect:results.filter(r=>r.comparisonCorrect).length,correct:results.filter(r=>r.correct).length,results},null,2));
+ console.log(test.id,results.at(-1).correct?'PASS':'FAIL',results.at(-1).seconds.toFixed(1)+'s');
+}console.log('Saved:',output.pathname);

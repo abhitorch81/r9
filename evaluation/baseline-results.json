@@ -1,0 +1,251 @@
+{
+  "model": "gemma3:1b",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "createdAt": "2026-10-25T14:03:11.797Z",
+  "scope": "Translation-only probe; sampled equivalence, not symbolic proof. No repair pass. Not end-to-end app accuracy.",
+  "completed": 30,
+  "total": 30,
+  "correct": 2,
+  "results": [
+    {
+      "id": "rotation-1",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 5.3835104000000005
+    },
+    {
+      "id": "source-1",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.093866900000001
+    },
+    {
+      "id": "rotation-2",
+      "category": "explicit",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.0123276999999997
+    },
+    {
+      "id": "source-2",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.4716334000000004
+    },
+    {
+      "id": "rotation-3",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.2688183999999985
+    },
+    {
+      "id": "source-3",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"3\", \"3\", \"3\"]}",
+      "seconds": 3.1367733999999983
+    },
+    {
+      "id": "rotation-4",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.4488974999999993
+    },
+    {
+      "id": "source-4",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"4\", \"4\", \"4\"]}",
+      "seconds": 3.144008600000001
+    },
+    {
+      "id": "rotation-5",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 2.995777899999997
+    },
+    {
+      "id": "source-5",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"5\", \"5\", \"5\"]}",
+      "seconds": 2.853979800000001
+    },
+    {
+      "id": "rotation-6",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.0002634000000032
+    },
+    {
+      "id": "source-6",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.939429199999999
+    },
+    {
+      "id": "rotation-7",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 2.957291099999995
+    },
+    {
+      "id": "source-7",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"7\", \"7\", \"7\"]}",
+      "seconds": 2.8252571000000026
+    },
+    {
+      "id": "rotation-8",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 2.977777000000002
+    },
+    {
+      "id": "source-8",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.9504707999999953
+    },
+    {
+      "id": "rotation-9",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.0307113000000028
+    },
+    {
+      "id": "source-9",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.8567151999999987
+    },
+    {
+      "id": "rotation-10",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.964869200000001
+    },
+    {
+      "id": "source-10",
+      "category": "explicit",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"10\", \"10\", \"10\"]}",
+      "seconds": 3.080173299999995
+    },
+    {
+      "id": "notation-1",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.8953310000000054
+    },
+    {
+      "id": "notation-2",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 2.9189830000000074
+    },
+    {
+      "id": "notation-3",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"2*x\",\"2*y\",\"0\"]}",
+      "seconds": 2.724944300000003
+    },
+    {
+      "id": "notation-4",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.981496800000008
+    },
+    {
+      "id": "notation-5",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 3.1977114
+    },
+    {
+      "id": "notation-6",
+      "category": "language-or-notation",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\": [\"-2*y\", \"2*x\", \"0\"]}",
+      "seconds": 2.8946892999999982
+    },
+    {
+      "id": "notation-7",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"2*x\", \"2*y\", \"0\"]}",
+      "seconds": 2.8922697000000044
+    },
+    {
+      "id": "notation-8",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.8217293999999966
+    },
+    {
+      "id": "notation-9",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 2.8455822000000044
+    },
+    {
+      "id": "notation-10",
+      "category": "language-or-notation",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"2\", \"0\", \"0\"]}",
+      "seconds": 2.5717563999999986
+    }
+  ]
+}

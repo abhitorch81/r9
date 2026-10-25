@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fieldtrip-lab
+    runtime: static
+    buildCommand: echo "Buildless FieldTrip"
+    staticPublishPath: ./dist

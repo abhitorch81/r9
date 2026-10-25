@@ -1,0 +1,282 @@
+{
+  "mode": "hybrid",
+  "model": "gemma3:1b",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "createdAt": "2026-10-25T18:43:44.139Z",
+  "scope": "Development-set translation probe; sampled equivalence, not proof. Hybrid routes explicit syntax through the same parser as the app. No plan or observation evaluation, no repair pass. Not end-to-end app accuracy.",
+  "completed": 30,
+  "total": 30,
+  "correct": 27,
+  "results": [
+    {
+      "id": "rotation-1",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-1*y\",\"1*x\",\"0\"]}",
+      "seconds": 0.147868
+    },
+    {
+      "id": "source-1",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"1*x\",\"1*y\",\"1*z\"]}",
+      "seconds": 0.05518679999999997
+    },
+    {
+      "id": "rotation-2",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-2*y\",\"2*x\",\"0\"]}",
+      "seconds": 0.04825320000000005
+    },
+    {
+      "id": "source-2",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"2*x\",\"2*y\",\"2*z\"]}",
+      "seconds": 0.04139759999999995
+    },
+    {
+      "id": "rotation-3",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-3*y\",\"3*x\",\"0\"]}",
+      "seconds": 0.04261810000000003
+    },
+    {
+      "id": "source-3",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"3*x\",\"3*y\",\"3*z\"]}",
+      "seconds": 0.03485179999999997
+    },
+    {
+      "id": "rotation-4",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-4*y\",\"4*x\",\"0\"]}",
+      "seconds": 0.03743549999999999
+    },
+    {
+      "id": "source-4",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"4*x\",\"4*y\",\"4*z\"]}",
+      "seconds": 0.03550839999999994
+    },
+    {
+      "id": "rotation-5",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-5*y\",\"5*x\",\"0\"]}",
+      "seconds": 0.03912519999999995
+    },
+    {
+      "id": "source-5",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"5*x\",\"5*y\",\"5*z\"]}",
+      "seconds": 0.03197659999999996
+    },
+    {
+      "id": "rotation-6",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-6*y\",\"6*x\",\"0\"]}",
+      "seconds": 0.035731499999999985
+    },
+    {
+      "id": "source-6",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"6*x\",\"6*y\",\"6*z\"]}",
+      "seconds": 0.03624860000000001
+    },
+    {
+      "id": "rotation-7",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-7*y\",\"7*x\",\"0\"]}",
+      "seconds": 0.03410310000000004
+    },
+    {
+      "id": "source-7",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"7*x\",\"7*y\",\"7*z\"]}",
+      "seconds": 0.03336090000000001
+    },
+    {
+      "id": "rotation-8",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-8*y\",\"8*x\",\"0\"]}",
+      "seconds": 0.03199019999999996
+    },
+    {
+      "id": "source-8",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"8*x\",\"8*y\",\"8*z\"]}",
+      "seconds": 0.039156900000000064
+    },
+    {
+      "id": "rotation-9",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-9*y\",\"9*x\",\"0\"]}",
+      "seconds": 0.03486760000000004
+    },
+    {
+      "id": "source-9",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"9*x\",\"9*y\",\"9*z\"]}",
+      "seconds": 0.03434270000000004
+    },
+    {
+      "id": "rotation-10",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-10*y\",\"10*x\",\"0\"]}",
+      "seconds": 0.03661939999999993
+    },
+    {
+      "id": "source-10",
+      "category": "explicit",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"10*x\",\"10*y\",\"10*z\"]}",
+      "seconds": 0.03792270000000008
+    },
+    {
+      "id": "notation-1",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-y\",\"x\",\"0\"]}",
+      "seconds": 0.036873799999999964
+    },
+    {
+      "id": "notation-2",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"0.0\",\n  \"0.0\",\n  \"0.0\"\n]}",
+      "seconds": 4.7513385
+    },
+    {
+      "id": "notation-3",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"1\",\n  \"0\",\n  \"-1\"\n]}",
+      "seconds": 4.1876714999999995
+    },
+    {
+      "id": "notation-4",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"x\",\"-y\",\"0\"]}",
+      "seconds": 0.07915380000000005
+    },
+    {
+      "id": "notation-5",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-y/(x^2+y^2)}\",\n  \"{\",\"x/\"\n  ]}",
+      "seconds": 5.268388500000001
+    },
+    {
+      "id": "notation-6",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"-2y\",\"2x\",\"0\"]}",
+      "seconds": 0.09335260000000016
+    },
+    {
+      "id": "notation-7",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"x^2\",\"y^2\",\"z^2\"]}",
+      "seconds": 0.07892630000000099
+    },
+    {
+      "id": "notation-8",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"y*z\",\"x*z\",\"x*y\"]}",
+      "seconds": 0.05599209999999948
+    },
+    {
+      "id": "notation-9",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"sin(y)\",\"cos(x)\",\"0\"]}",
+      "seconds": 0.060311499999999796
+    },
+    {
+      "id": "notation-10",
+      "category": "language-or-notation",
+      "route": "direct-parser",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\":[\"x^2\",\"-y\",\"z\"]}",
+      "seconds": 0.05896379999999954
+    }
+  ]
+}

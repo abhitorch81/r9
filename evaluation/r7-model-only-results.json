@@ -1,0 +1,282 @@
+{
+  "mode": "model-only",
+  "model": "gemma3:1b",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "createdAt": "2026-10-25T18:40:58.670Z",
+  "scope": "Development-set translation probe; sampled equivalence, not proof. Hybrid routes explicit syntax through the same parser as the app. No plan or observation evaluation, no repair pass. Not end-to-end app accuracy.",
+  "completed": 30,
+  "total": 30,
+  "correct": 2,
+  "results": [
+    {
+      "id": "rotation-1",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-1*y\", \"1*x\", \"0\"\n]}",
+      "seconds": 7.962223799999999
+    },
+    {
+      "id": "source-1",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"1\",\n  \"1\",\n  \"1\"\n]}",
+      "seconds": 4.581465099999999
+    },
+    {
+      "id": "rotation-2",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-2*y\", \"2*x\", \"0\"\n]}",
+      "seconds": 4.751000499999998
+    },
+    {
+      "id": "source-2",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"2\",\n  \"2\",\n  \"2\"\n]}",
+      "seconds": 4.4601289
+    },
+    {
+      "id": "rotation-3",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-3*y\", \"3*x\", \"0\"\n]}",
+      "seconds": 4.6042772
+    },
+    {
+      "id": "source-3",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"3\",\n  \"3\",\n  \"3\"\n]}",
+      "seconds": 4.300325700000001
+    },
+    {
+      "id": "rotation-4",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-4*y\", \"4*x\", \"0\"\n]}",
+      "seconds": 4.642361199999999
+    },
+    {
+      "id": "source-4",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"4\",\n  \"4\",\n  \"4\"\n]}",
+      "seconds": 4.398162400000001
+    },
+    {
+      "id": "rotation-5",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-5*y\", \"5*x\", \"0\"\n]}",
+      "seconds": 4.642121800000001
+    },
+    {
+      "id": "source-5",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"5\",\n  \"5\",\n  \"5\"\n]}",
+      "seconds": 4.445177599999996
+    },
+    {
+      "id": "rotation-6",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Parenthesis ) expected (char 4)",
+      "output": "{\"components\": [\n  \"(-6, 6, 0)\",\n  \"(-6, 6, 0)\",\n  \"(-6, 6, 0)\"\n]}",
+      "seconds": 5.683159900000006
+    },
+    {
+      "id": "source-6",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"6\",\n  \"6\",\n  \"6\"\n]}",
+      "seconds": 4.335888200000001
+    },
+    {
+      "id": "rotation-7",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-7*y\", \"7*x\", \"0\"\n]}",
+      "seconds": 4.752043899999997
+    },
+    {
+      "id": "source-7",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"7\",\n  \"7\",\n  \"7\"\n]}",
+      "seconds": 4.363012599999995
+    },
+    {
+      "id": "rotation-8",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Parenthesis ) expected (char 6)",
+      "output": "{\"components\": [\n  \"(-8*y, 8*x, 0)\",\n  \"0\",\"y\"\n]\n}",
+      "seconds": 6.0134087
+    },
+    {
+      "id": "source-8",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"8\",\n  \"8\",\n  \"8\"\n]}",
+      "seconds": 4.722395900000003
+    },
+    {
+      "id": "rotation-9",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-9*y\", \"9*x\", \"0\"\n]}",
+      "seconds": 4.915369900000005
+    },
+    {
+      "id": "source-9",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"9\",\n  \"9\",\n  \"9\"\n]}",
+      "seconds": 4.792690399999993
+    },
+    {
+      "id": "rotation-10",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-10*y\", \"10*x\", \"0\"\n]}",
+      "seconds": 6.264284299999999
+    },
+    {
+      "id": "source-10",
+      "category": "explicit",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"10\",\n  \"10\",\n  \"10\"\n]}",
+      "seconds": 6.8632117
+    },
+    {
+      "id": "notation-1",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-y}\",\n  \"{\",\n  \"  \"\n  ]}",
+      "seconds": 6.8282736
+    },
+    {
+      "id": "notation-2",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"0.0\",\n  \"0.0\",\n  \"0.0\"\n]}",
+      "seconds": 6.743018199999991
+    },
+    {
+      "id": "notation-3",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"1\",\n  \"0\",\n  \"-1\"\n]}",
+      "seconds": 6.3931105000000095
+    },
+    {
+      "id": "notation-4",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\": [\n  \"x\",\n  \"-y\",\n  \"0\"\n]}",
+      "seconds": 6.21802489999999
+    },
+    {
+      "id": "notation-5",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": "Symbol or string expected as object key (char 2)",
+      "output": "{\"components\": [\n  \"{-y/(x^2+y^2)}\",\n  \"{\",\"x/\"\n  ]}",
+      "seconds": 7.620430200000017
+    },
+    {
+      "id": "notation-6",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\n  \"components\": [\n    \"-2\",\n    \"2\",\n    \"0\"\n  ]\n}",
+      "seconds": 5.925938699999999
+    },
+    {
+      "id": "notation-7",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"2\",\n  \"0\",\n  \"0\"\n]}",
+      "seconds": 5.995436199999997
+    },
+    {
+      "id": "notation-8",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\n  \"#x\",\n  \"#y\",\n  \"#z\"\n]}",
+      "seconds": 6.089541800000006
+    },
+    {
+      "id": "notation-9",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": true,
+      "error": null,
+      "output": "{\"components\": [\n  \"sin(y)\",\n  \"cos(x)\",\n  \"0\"]\n}",
+      "seconds": 6.275149200000015
+    },
+    {
+      "id": "notation-10",
+      "category": "language-or-notation",
+      "route": "model",
+      "correct": false,
+      "error": null,
+      "output": "{\"components\": [\"x\", \"y\", \"z\"]}",
+      "seconds": 4.787288500000024
+    }
+  ]
+}

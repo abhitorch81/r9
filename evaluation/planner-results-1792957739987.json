@@ -1,0 +1,447 @@
+{
+  "model": "gemma4:e2b",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "createdAt": "2026-10-25T19:53:59.642Z",
+  "datasetSha256": "541f86e032c23b06c4e39a465a507fe7120ada11eab3407636b8128ea83ca634",
+  "promptSha256": "f45d4b600ae6892644f531936696969a83e94f2d7c6a7af1a51f3bff4e9cf21f",
+  "scope": "Bounded planner evaluation. Exact field and comparison IDs; not arbitrary formula translation or end-to-end app accuracy. Author-created frozen questions, not an independently held-out benchmark.",
+  "completed": 24,
+  "total": 24,
+  "fieldCorrect": 16,
+  "comparisonCorrect": 17,
+  "correct": 14,
+  "results": [
+    {
+      "id": "vortex-1",
+      "question": "Show a smooth rotating field and compare small and large circular loops.",
+      "expected": {
+        "field": "vortex",
+        "comparison": "radius"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"vortex\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 27.416854500000003
+    },
+    {
+      "id": "vortex-2",
+      "question": "Help me see Stokes using rotation and a raised spanning surface.",
+      "expected": {
+        "field": "vortex",
+        "comparison": "surface"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "surface"
+      },
+      "raw": "{\"field\": \"vortex\", \"comparison\": \"surface\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 10.285321199999998
+    },
+    {
+      "id": "vortex-3",
+      "question": "Use a smooth swirl and reverse the direction around its boundary.",
+      "expected": {
+        "field": "vortex",
+        "comparison": "orientation"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "orientation"
+      },
+      "raw": "{\n  \"field\": \"vortex\",\n  \"comparison\": \"orientation\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 9.846948199999998
+    },
+    {
+      "id": "source-1",
+      "question": "Show outward expansion without rotation; vary the loop radius.",
+      "expected": {
+        "field": "source",
+        "comparison": "radius"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"source\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 10.014320200000002
+    },
+    {
+      "id": "source-2",
+      "question": "Visualize a source with arrows pointing away from the origin.",
+      "expected": {
+        "field": "source",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"source\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 10.026913399999998
+    },
+    {
+      "id": "source-3",
+      "question": "Take the expanding source example and reverse boundary orientation.",
+      "expected": {
+        "field": "source",
+        "comparison": "orientation"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "orientation"
+      },
+      "raw": "{\n  \"field\": \"source\",\n  \"comparison\": \"orientation\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 10.145978499999998
+    },
+    {
+      "id": "saddle-1",
+      "question": "I want equal stretching along x and compression along y.",
+      "expected": {
+        "field": "saddle",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "saddle",
+        "comparison": "none"
+      },
+      "raw": "{\n  \"field\": \"saddle\",\n  \"comparison\": \"none\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 10.477021200000003
+    },
+    {
+      "id": "saddle-2",
+      "question": "Compare circle sizes in a field that stretches x and compresses y equally.",
+      "expected": {
+        "field": "saddle",
+        "comparison": "radius"
+      },
+      "plan": {
+        "field": "saddle",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"saddle\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 11.254995500000005
+    },
+    {
+      "id": "saddle-3",
+      "question": "For the equal stretch-compress saddle, lift the spanning surface.",
+      "expected": {
+        "field": "saddle",
+        "comparison": "surface"
+      },
+      "plan": {
+        "field": "saddle",
+        "comparison": "surface"
+      },
+      "raw": "{\"field\": \"saddle\", \"comparison\": \"surface\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.472977100000003
+    },
+    {
+      "id": "gradient-1",
+      "question": "Show the supported steepest-ascent example from a potential.",
+      "expected": {
+        "field": "gradient",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "gradient",
+        "comparison": "none"
+      },
+      "raw": "{\"field\": \"gradient\", \"comparison\": \"none\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.245246499999993
+    },
+    {
+      "id": "gradient-2",
+      "question": "In the gradient example, does reversing the loop change the work?",
+      "expected": {
+        "field": "gradient",
+        "comparison": "orientation"
+      },
+      "plan": {
+        "field": "gradient",
+        "comparison": "none"
+      },
+      "raw": "{\n  \"field\": \"gradient\",\n  \"comparison\": \"none\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 12.882703200000003
+    },
+    {
+      "id": "gradient-3",
+      "question": "Compare different loop radii for the conservative gradient example.",
+      "expected": {
+        "field": "gradient",
+        "comparison": "radius"
+      },
+      "plan": {
+        "field": "gradient",
+        "comparison": "radius"
+      },
+      "raw": "{\"field\": \"gradient\", \"comparison\": \"radius\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.103258700000005
+    },
+    {
+      "id": "singular-1",
+      "question": "Show zero curl with nonzero circulation around an excluded axis.",
+      "expected": {
+        "field": "singular",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "singular",
+        "comparison": "none"
+      },
+      "raw": "{\"field\": \"singular\", \"comparison\": \"none\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.115069300000004
+    },
+    {
+      "id": "singular-2",
+      "question": "Change loop radius in the excluded-axis counterexample.",
+      "expected": {
+        "field": "singular",
+        "comparison": "radius"
+      },
+      "plan": {
+        "field": "singular",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"singular\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.227406699999992
+    },
+    {
+      "id": "singular-3",
+      "question": "Reverse the boundary direction in the zero-curl field with a hole.",
+      "expected": {
+        "field": "singular",
+        "comparison": "orientation"
+      },
+      "plan": {
+        "field": "singular",
+        "comparison": "orientation"
+      },
+      "raw": "{\"field\": \"singular\", \"comparison\": \"orientation\"}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.301771899999993
+    },
+    {
+      "id": "outside_scope-1",
+      "question": "Solve the heat equation on a cube.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "radius"
+      },
+      "raw": "{\"field\": \"source\", \"comparison\": \"radius\"}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 9.620597999999998
+    },
+    {
+      "id": "outside_scope-2",
+      "question": "Prove Stokes theorem for every smooth surface.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "surface"
+      },
+      "raw": "{\"field\": \"vortex\", \"comparison\": \"surface\"}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 9.170328100000013
+    },
+    {
+      "id": "outside_scope-3",
+      "question": "Compute flux through an arbitrary torus I specify.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "none"
+      },
+      "raw": "{\"field\": \"vortex\", \"comparison\": \"none\"}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": true,
+      "correct": false,
+      "seconds": 18.63299919999999
+    },
+    {
+      "id": "outside_scope-4",
+      "question": "Animate a time-dependent Navier Stokes solution.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "radius"
+      },
+      "raw": "{\"field\": \"vortex\", \"comparison\": \"radius\"}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 20.836010299999995
+    },
+    {
+      "id": "outside_scope-5",
+      "question": "Solve the hydrogen atom quantum wave equation.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "radius"
+      },
+      "raw": "{\n  \"field\": \"source\",\n  \"comparison\": \"radius\"\n}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 9.526681799999992
+    },
+    {
+      "id": "outside_scope-6",
+      "question": "Find all critical points of my arbitrary scalar potential.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "gradient",
+        "comparison": "none"
+      },
+      "raw": "{\n  \"field\": \"gradient\",\n  \"comparison\": \"none\"\n}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": true,
+      "correct": false,
+      "seconds": 10.962045300000026
+    },
+    {
+      "id": "outside_scope-7",
+      "question": "Calculate an indefinite integral of exp(-x^2).",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "source",
+        "comparison": "none"
+      },
+      "raw": "{\n  \"field\": \"source\",\n  \"comparison\": \"none\"\n}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": true,
+      "correct": false,
+      "seconds": 11.266544999999983
+    },
+    {
+      "id": "outside_scope-8",
+      "question": "Tell me the weather tomorrow.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "raw": "{\n  \"field\": \"outside_scope\",\n  \"comparison\": \"none\"\n}",
+      "error": null,
+      "fieldCorrect": true,
+      "comparisonCorrect": true,
+      "correct": true,
+      "seconds": 12.031787799999991
+    },
+    {
+      "id": "outside_scope-9",
+      "question": "Change the surface.",
+      "expected": {
+        "field": "outside_scope",
+        "comparison": "none"
+      },
+      "plan": {
+        "field": "vortex",
+        "comparison": "surface"
+      },
+      "raw": "{\n  \"field\": \"vortex\",\n  \"comparison\": \"surface\"\n}",
+      "error": null,
+      "fieldCorrect": false,
+      "comparisonCorrect": false,
+      "correct": false,
+      "seconds": 11.73277860000002
+    }
+  ]
+}
